@@ -43,8 +43,11 @@ const disablePastDate = () => {
     const yyyy = today.getFullYear();
     return yyyy + "-" + mm + "-" + dd;
 };
+const cancel_league = ()=>{
+alert("BYE");
+}
 
-const add_league = ()=>{
+const save_league = ()=>{
     error_flag = 0;
     error_list = [];
     
@@ -425,12 +428,12 @@ return (
                         </div> */}
                         <div className="row mb-3">
                             <div className="d-grid gap-2 d-md-block">
-                            <CButton id='save-button'  onClick={add_league}  color="danger" >Cancel League</CButton>
+                            <CButton id='save-button'  onClick={cancel_league}  color="danger" >Cancel League</CButton>
                             </div>
                         </div>
                         <div className="row mb-3">
                             <div className="d-grid gap-2 d-md-block">
-                            <CButton id='save-button'  onClick={add_league} style={{float:'right'}} color="success" >Save League</CButton> 
+                            <CButton id='save-button'  onClick={save_league} style={{float:'right'}} color="success" >Save League</CButton> 
                             </div>
                         </div>
 

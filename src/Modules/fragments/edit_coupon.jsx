@@ -45,7 +45,7 @@ const Edit_Coupon = (props) => {
         const yyyy = today.getFullYear();
         return yyyy + "-" + mm + "-" + dd;
     };
-    const edit_battle = function () {
+    const save_coupon = function () {
         alert("HIE")
         window.location.href = "/#/edit_coupon";
     };
@@ -327,7 +327,7 @@ const Edit_Coupon = (props) => {
                                 </div> */}
                                 <div className="row mb-3">
                                     <div className="d-grid gap-2 d-md-block">
-                                        <CButton id='save-button' onClick={edit_battle} style={{ float: 'right' }} color="success" >Save Coupon</CButton>
+                                        <CButton id='save-button' onClick={save_coupon} style={{ float: 'right' }} color="success" >Save Coupon</CButton>
                                     </div>
                                 </div>
 

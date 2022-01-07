@@ -49,7 +49,7 @@ const Add_Coupon = (props) => {
         alert("HIE")
         window.location.href = "/#/edit_battle";
     };
-    const add_league = () => {
+    const add_coupon = () => {
         error_flag = 0;
         error_list = [];
 
@@ -318,7 +318,7 @@ const Add_Coupon = (props) => {
                                 </div> */}
                                 <div className="row mb-3">
                                     <div className="d-grid gap-2 d-md-block">
-                                        <CButton id='save-button' onClick={add_league} style={{ float: 'right' }} color="success" >Save Coupon</CButton>
+                                        <CButton id='save-button' onClick={add_coupon} style={{ float: 'right' }} color="success" >Save Coupon</CButton>
                                     </div>
                                 </div>
 

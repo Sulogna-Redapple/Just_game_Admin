@@ -188,24 +188,7 @@ function DataTableLeaguesData(props) {
 
     })
   }
-  //  const handleKeyPress=(evt)=> {
-  //     console.log( "You pressed a key." )
-  // //     var charCode = (evt.which) ? evt.which : evt.keyCode
-  // //     console.log(charCode)
-  // //     if (charCode != 46 && charCode > 31 
-  // // 	&& (charCode < 48 || charCode > 57)&& (charCode == 35 || charCode > 95 || charCode >37 || charCode > 42 || charCode > 64))
-  // //   {
 
-  // // alert("wrong");
-
-  // //   }
-  //   // console.log(charCode)
-  //   //       return false;
-  //   //       return true;
-  // console.log(evt.target.value);
-  // evt.target.value.replace(/[^\w\s]/gi, "")
-  //   return true;
-  // }
 
   const filter = () => {
     let filter_value = ''
@@ -252,30 +235,7 @@ function DataTableLeaguesData(props) {
               <CFormControl type="text" size="sm" id={search_field_id} onChange={search}
                 placeholder="Search ..." aria-label="sm input example" style={{"width":"100%"}} onkeypress="return event.charCode != 32" disabled = {disabled}  />
 
-{parameters.show_date_filter === true &&
-/* <>
 
-
-                <label for="start date">Start date</label>
-<input type="date" id={dateFilterStartId} onChange={searchWithDate} name="start date"></input>
-<label for="end date">End date</label>
-<input type="date" id={dateFilterEndId} name="end date" onChange={searchWithDate}></input>
-
-</> */
-{/* <div className="row mb-3">
-
-    <CFormLabel htmlFor="exampleFormControlInput1"><b>Start Date*</b></CFormLabel>
-  
-    <DatePicker type="date" selected={startDate} onChange={searchWithDate}  onChange={(date) => setStartDate(date)} style={{width:"500px"}} minDate={new Date()} id="start_date" required/>
-
-
-    <CFormLabel ><b>End Date*</b></CFormLabel>
-   
-    <DatePicker type="date" selected={endDate} onChange={searchWithDate} onChange={(date) => setEndDate(date)}  id="end_date" required/>
-
-</div> */}
-
-}
 
             </div>
           </div>

@@ -201,9 +201,9 @@ function DataTableBanner(props) {
   // evt.target.value.replace(/[^\w\s]/gi, "")
   //   return true;
   // }
-  const edit_battle = function () {
-    // alert("HIE")
-    window.location.href = "/#/edit_banner";
+  const edit_banner = function () {
+     //alert("HIE")
+    // window.location.href = "/#/edit_banner";
   };
   const copy_battle = function () {
     alert("HELLO")
@@ -336,7 +336,7 @@ function DataTableBanner(props) {
 
                       <div className="row mb-3">
                         <div className="d-grid gap-2 d-md-block" >
-                          <CButton id='save-button' color="success" onClick={edit_battle} >Edit Banner</CButton>
+                          <CButton id='save-button' color="success" onClick={edit_banner} >Edit Banner</CButton>
                         </div>
                       </div>
                       <div className="row mb-3">

@@ -213,6 +213,20 @@ const inputChange = (e) => {
     }
     setAdminCut(parseInt(e.target.value));
   };
+  const send_sms = () =>
+  {
+      alert("HI")
+  }
+
+  const block_unblock = () =>
+  {
+      alert("HELLO")
+  }
+
+  const delete_request = () =>
+  {
+      alert("BYE")
+  }
 // const deactive = () => {
   
 //     let data = {
@@ -367,17 +381,17 @@ return (
     </div>
                     <div className="row mb-3">
                         <div className="d-grid gap-2 d-md-block">
-                          <CButton id='save-button' style={{ float: 'right' }} color="success"  >Send SMS</CButton>
+                          <CButton id='save-button' style={{ float: 'right' }} onClick={send_sms} color="success"  >Send SMS</CButton>
                         </div>
                       </div>
                       <div className="row mb-3">
                         <div className="d-grid gap-2 d-md-block">
-                          <CButton id='save-button' style={{ float: 'left' }} color="success"  >Block/Unblock</CButton>
+                          <CButton id='save-button' style={{ float: 'left' }} onClick={block_unblock} color="success"  >Block/Unblock</CButton>
                         </div>
                       </div>
                       <div className="row mb-3">
                         <div  className="btn-group ml-auto "  >
-                          <CButton id='save-button'  color="success" style={{width:'20px',marginLeft: '600px',marginRight: '600px'}}>Delete</CButton>
+                          <CButton id='save-button'  color="success" onClick={delete_request}style={{width:'20px',marginLeft: '600px',marginRight: '600px'}}>Delete</CButton>
                         </div>
                       </div>
 </>
